@@ -15,19 +15,19 @@
     href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;600;700&display=swap" 
     rel="stylesheet"
   />
-  <like rel="stylesheet" href="style.css2" />
+  <link rel="stylesheet" href="style.css" />
   <script src="main.js" defer></script>
 </head>
 <body>
   <!-- Navbar -->
   <nav id="navbar">
     <div class="navbar_logo">
-      <i class="fab fa-diaspora"></i>
-      <a href="#">Gihwan</a>
+      <!-- <i class="fab fa-diaspora"></i>
+      <a href="#">Gihwan</a> -->
     </div>
-    <div>
+    <div class="navbar_menu">
       <ul class="navbar_menu">
-        <li class="navbar_menu_item">Home</li>
+        <li class="navbar_menu_item active">Home</li>
         <li class="navbar_menu_item">About</li>
         <li class="navbar_menu_item">Skills</li>
         <li class="navbar_menu_item">Project</li>
@@ -37,43 +37,118 @@
   </nav>
 
   <!-- Home -->
-  <section id="home">
-    <img src="imgs/gihwan.png" alt="gihwn profile" class="home_avatar" />
-    <h1 class="home_title"> 안녀하세요.<br />인사말</h1>
-    <h2 class="home_description">나를 말해주는것 나를 강조할수있는 문장</h2>
+  <section id="home" class="section">
+    <img src="imgs/gihwan.png" alt="gihwn_profile" class="home_avatar" />
+    <h1 class="home_title"> 안녕하세요</h1>
+    <h2 class="home_description">개발자 백기환의 포트폴리오 입니다.</h2>
     <button class="home_contact">Contact me</button>
   </section>
   
   <!-- About -->
-  <section id="about">
+  <section id="about" class="section">
     <div class="about_title">
       <h1>About me</h1>
     </div>
     <div class="about_description">
-      <h2>소제목~~</h2>
-    </div>
-    <div class="about_contents">
+      <h2>도전하는 개발자</h2> 
       <p>
-        나의 자기 소개를 쓴다!!@#!@#!@
-      </p>
-    </div>    
+        저는 도전하는 개발자로서 일을 하고싶습니다.<br/>
+        경력이 쌓이고 같은 환경에서 개발을 하다보면 그 업무에 대해 자연스럽고 거기에 머물러 있을수있습니다.<br/>
+        하지만 저는 새로운 개발환경이 나오면 도전해보고 공부 하므로써 더 좋은 퀄리티의 개발자로 남고싶습니다.
+      </p><br>
+      <div class="career_jobs">
+        <div class="job">
+          <img src="imgs/jobs/joblogo.png" alt="jobslogo" class="job_logo">
+          <div class="job_description">
+            <p class="job_name">디지털컨버전스 기반 Spring 개발자 양성과정</p>
+            <p class="job_period">2020.03 ~ 2020.09</p>
+          </div>
+        </div>
+      </div> 
+    </div>       
   </section>
 
-  <!-- Career -->
-  <section id="career">
-    <div class="career_jobs">
-      <div class="job">
-        <img src="imgs/jobs/joblogo.png" alt="jobslogo" class="job_logo">
-        <p class="job_name">디지털컨버전스 기반 Spring 개발자 양성과정</p>
-        <p class="job_period">2020.03 ~ 2020.09</p>
-      </div>
+  <!-- Skills -->
+  <section id="skills" class="section">
+    <div class="skills_title">
+      <h1>Skills</h1>
+    </div>
+    <div class="Launage skills_contact">
+      <h2>Launage</h2>
+      <img src="imgs/skills/java.png" alt="LaunageIcon" class="Launage_icon">
+      <img src="imgs/skills/js.png" alt="LaunageIcon" class="Launage_icon">
+    </div>
+    <div class="WebSkils skills_contact">
+      <h2>WebSkils</h2>
+      <img src="imgs/skills/html.png" alt="WebSkilsIcon" class="WebSkills_icon">
+      <img src="imgs/skills/css.png" alt="WebSkilsIcon" class="WebSkills_icon">
+      <img src="imgs/skills/js.png" alt="WebSkilsIcon" class="WebSkills_icon">
+      <img src="imgs/skills/jquery.png" alt="WebSkilsIcon" class="WebSkills_icon">
+    </div>     
+    <div class="FrameWork skills_contact">
+      <h2>FrameWork</h2>
+      <img src="imgs/skills/spring.png" alt="FrameWorkIcon" class="FrameWork_icon">
+      <img src="imgs/skills/mybatis.png" alt="FrameWorkIcon" class="FrameWork_icon">
+    </div>
+    <div class="DataBase skills_contact">
+      <h2>DataBase</h2>
+      <img src="imgs/skills/oracle.png" alt="DataBaseIcon" class="DataBase_icon">
+    </div>
+    <div class="Etc skills_contact">
+      <h2>Etc</h2>
+      <img src="imgs/skills/git.png" alt="EtcIcon" class="Etc_icon"> 
+      <img src="imgs/skills/tocat.png" alt="EtcIcon" class="Etc_icon">
     </div>
   </section>
-  <!-- Skills -->
-  <section id="skills"></section>
+  
+
   <!-- Project -->
-  <section id="project"></section>
+  <section id="project" class="section">
+    <div class="project_title">
+      <h1>project</h1>
+    </div>
+    <div class="project_morip">
+      <div class="project_left">
+        <img src="imgs/project/morip.png" alt="morip_img" class="project_left_image">
+      </div>
+      <div class="project_right">      
+        <h1>MO:RIP</h1>
+        <h2>여행블로그 및 맛집추천 사이트</h2>
+        <h3>개발기간: 2020.08.03 ~ 2020.09.04</h3>        
+        <p>#Spring #Json #jQuery #ajax #Mybatis #Oracle #Git</p>
+        <a href="https://github.com/BaekGihwan/morip"><img src="imgs/skills/git.png" alt="" class="project_morip_github"></a>
+        <a href="www.daum.net"><img src="imgs/skills/pdf.png" alt="" class="project_morip_pdf"></a>
+      </div>
+    </div>
+
+
+    <div class="project_morip">
+      <div class="project_left">
+        <img src="imgs/project/cookierun.png" alt="morip_img" class="project_left_image">
+      </div>
+      <div class="project_right">      
+        <h1>쿠키런</h1>
+        <h2>모바일게임 쿠키런을 자바 프로그램으로 구현</h2>
+        <h3>개발기간: 2020.05.08 ~ 2020.05.24</h3>        
+        <p>#Java #Oracle </p>
+        <a href="https://github.com/BaekGihwan/cookierun"><img src="imgs/skills/git.png" alt="" class="project_morip_github"></a>
+        <a href="www.daum.net"><img src="imgs/skills/pdf.png" alt="" class="project_morip_pdf"></a>
+      </div>
+    </div>
+
+  </section>
+
   <!-- Contact -->
-  <section id="contact"></section>
+  <section id="contact" class="section">
+    <h1 class="contact_title">Contact me</h1>
+    <h5 class="contact_description">looking forword to contact</h5>
+    <div class="contact_phone">연락처: 010-7196-4426</div> 
+    <div class="contact_mail">mail: ghbaek88@naver.com</div> 
+    <div class="contact_github">
+      <a href="https://github.com/BaekGihwan">
+        <i class="fa fa-github fa-3x"></i>
+      </a>
+    </div>      
+  </section>
 </body>
 </html>
