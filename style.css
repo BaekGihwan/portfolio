@@ -100,23 +100,23 @@ p {
   align-items: center;
   padding: 16px;
   background-color: transparent;
+  font-size: 22px;
 }
 
 #navbar.navbar-dark {
   background-color: var(--color-blue);
-  padding: 8px;
 }
 
-.navbar_menu {
+.navbar-menu {
   display: flex;
 }
 
-.navbar_logo {
+.navbar-logo {
   font-size: var(--font-medium);
   font-weight: var(--weight-semi-bold);
 }
 
-.navbar_menu_item {
+.navbar-menu-item {
   color: var(--color-white);
   padding: 8px 12px;
   margin: 0 4px;
@@ -128,6 +128,13 @@ p {
   background-color: var(--color-dark-pink);
 }
 
+/* Section common */
+.section {
+  padding: 50px;
+  text-align: center;
+  margin: auto;
+}
+
 /* Home */
 #home {
   background: url("imgs/bg.png") center/cover no-repeat;
@@ -136,19 +143,19 @@ p {
   text-align: center;
 }
 
-.home_avatar {
+.home-avatar {
   width: 250px;
   height: 250px;
   border-radius: 50%;
   border: 2px solid var(--color-white);
 }
 
-.home_title,
-.home_description {
+.home-title,
+.home-description {
   color: var(--color-white);
 }
 
-.home_contact {
+.home-contact {
   color: var(--color-white);
   font-size: var(--font-regular);
   font-weight: var(--weight-bold);
@@ -158,46 +165,40 @@ p {
   border-radius: var(--size-border-radius);
 }
 
-/* Section common */
-.section {
-  padding: 50px;
-  text-align: center;
-  margin: auto;
-}
-
 /* About */
 #about {
   display: flex;
 }
 
-.about_title {
+.about-title {
   margin: 0 100px;
 }
 
-.about_description p,
-.about_description h2 {
+.about-description h2,
+.about-description p {
   text-align: left;
 }
 
-.career_jobs {
-  display: flex;
+.career-jobs {
+  display: block;
+  margin-top: 10px;
 }
 
 .job {
   display: flex;
 }
 
-.job_logo {
+.job-logo {
   width: 40px;
   height: 40px;
   border: 1px solid var(--color-white);
 }
 
-.job_description {
-  margin: 0 16px;
+.job-description {
+  margin: 0 0 15px 10px;
 }
 
-.job_description p {
+.job-description p {
   font-size: var(--font-micro);
 }
 
@@ -223,9 +224,14 @@ p {
 }
 
 /* Project */
+#project {
+  background-color: var(--color-white);
+}
+
 .project_title {
   margin-bottom: 50px;
 }
+
 .project_morip {
   display: flex;
   height: 360px;
@@ -258,27 +264,23 @@ p {
 }
 
 /* Contact */
-#project {
-  background-color: var(--color-white);
-}
-
 #contact {
   background-color: var(--color-pink);
   color: var(--color-white);
 }
 
-.contact_title {
+.contact-title {
   color: var(--color-white);
 }
 
-.contact_github i {
+.contact-phone,
+.contact-email {
+  font-size: var(--font-medium);
+  margin: 10px 0;
+}
+
+.contact-github i {
   width: 100px;
   height: 100px;
   color: var(--color-white);
-}
-
-.contact_phone,
-.contact_mail {
-  font-size: var(--font-medium);
-  margin: 20px 0;
 }

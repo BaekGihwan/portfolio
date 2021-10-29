@@ -12,7 +12,7 @@ document.addEventListener('scroll', () => {
 });
 
 // handle
-const navbarMenu = document.querySelector('.navbar_menu');
+const navbarMenu = document.querySelector('.navbar-menu');
 navbarMenu.addEventListener('click', (event) => {  
   const target = event.target;
   const link = target.dataset.link;
@@ -24,7 +24,7 @@ navbarMenu.addEventListener('click', (event) => {
 });
 
 // handle button
-const homeContactBtn = document.querySelector('.home_contact');
+const homeContactBtn = document.querySelector('.home-contact');
 homeContactBtn.addEventListener('click', () => {
   scrollIntoView('#contact');
 });
